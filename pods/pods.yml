@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: WebApp
+  name: nodeapp
   labels:
-    app: WebApp
+    app: nodeapp
 spec:
   containers:
-    - name: WebApp
-      image: khteamlead/WebApp:v1
+    - name: nodeapp
+      image: khteamlead/nodeapp:v1
       ports:
         - containerPort: 8080
